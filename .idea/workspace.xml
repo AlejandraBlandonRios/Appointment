@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6153ebba-8fd5-4f1f-93ee-1efcfdbe85ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chromedriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/serenity.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/userinterface/AppointmentPageUserInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runners/ScheduleAnAppointmentRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepsdefinition/ScheduleAnAppointmentStepsDefinition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/appointment.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/questions/MessageOf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/LogIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tasks/Make.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/userinterface/AppointmentPageUserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/userinterface/AppointmentPageUserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepsdefinition/ScheduleAnAppointmentStepsDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepsdefinition/ScheduleAnAppointmentStepsDefinition.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,10 +46,15 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_directory_selection": "C:/Users/aleja/Documents/Proyectos/Appointment/src/main/java/questions",
     "last_opened_file_path": "C:/Users/aleja/Documents/Proyectos/Appointment"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="questions" />
+      <recent name="tasks" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\aleja\Documents\Proyectos\Appointment" />
     </key>

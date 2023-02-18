@@ -4,12 +4,17 @@ import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.thucydides.core.annotations.Managed;
+import org.hamcrest.Matchers;
 import org.openqa.selenium.WebDriver;
+import questions.MessageOf;
+import tasks.LogIn;
+import tasks.Make;
 import userinterface.AppointmentPageUserInterface;
 
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
@@ -32,10 +37,13 @@ public class ScheduleAnAppointmentStepsDefinition {
 
     @When("^user creates a new appointment$")
     public void user_creates_a_new_appointment() {
+        theActorInTheSpotlight().attemptsTo(LogIn.page());
+        theActorInTheSpotlight().attemptsTo(Make.anAppointment());
     }
 
-    @Then("^the message Appointment Confirmation appears in the screen$")
-    public void the_message_Appointment_Confirmation_appears_in_the_screen() {
+    @Then("^the message (.*) appears in the screen$")
+    public void the_message_appears_in_the_screen(String message) {
+        theActorInTheSpotlight().should(GivenWhenThen.seeThat(MessageOf.booking(), Matchers.equalTo(message)));
     }
 
 }
